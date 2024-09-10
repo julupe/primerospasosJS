@@ -22,6 +22,14 @@ console.log(numero2)
 
 console.log("El resultado de: " + numero1)
 
+//Para escribir constantes
+
+const pi= 3.1416
+
+//Para escribir booleano
+
+let expresion=true
+
 //concatenar con "literal template"
 //Las comillas invertidas es alt+96
 
@@ -29,3 +37,14 @@ console.log(`El resultado de la suma entre ${numero1} y ${numero2} es ${suma}`)
 console.log(`El resultado de la resta entre ${numero1} y ${numero2} es ${resta}`)
 console.log(`El resultado de la multiplicacion entre ${numero1} y ${numero2} es ${multiplicacion}`)
 console.log(`El resultado de la division entre ${numero1} y ${numero2} es ${division}`)
+
+
+/**
+ * Clase 10/09/2024
+ * Vamos a trabajar con variables 'let'
+ */
+
+let nu1
+let nu2
+let nu3
+let nu4
