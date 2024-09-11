@@ -112,31 +112,61 @@ else{
 */
 
 
-//Ejercicio de práctica
+/**Ejercicio de práctica 1
 
-let edad;
+let edad = 18;
 
-edad = parseInt(prompt("Ingresa tu año de nacimiento"));
-if( edad =>1883 && edad <= 1900){
-    console.log("Generación perdida");
-}else if(edad >1900 && edad <=1924){
-    console.log("Generación grandiosa");
+if (edad >= 50) {
+    console.log("Eres genración perdida");
+} else {
+    console.log("Eres menor de edad");
 }
-}else if(edad >1924 && edad <=1945){
-    console.log("Generación silenciosa");
+
+*/
+
+//Ejercicio 2: if anidado
+
+/** 
+
+let año = 1920
+
+let = prompt("Cuál es tu año de nacimiento");
+
+if( año <1900) {
+    console.log("Eres generación perdida");
+} else if (año > 1901 && < 1924) {
+    console.log("Eres generación grandiosa");
 }
-}else if(edad >1945 && edad <=1964){
-    console.log("Baby Boomers");
+} else {
+    console.log("Eres generación Alpha");
 }
-}else if(edad >1964 && edad <=1980){
-    console.log("Generación X");
+
+*/
+//Operador ternario: se utiliza cuando se evalúa una sola condición
+
+//Ejericicio switch case: Conversor de dinero
+
+
+let pesos = prompt("Valor en pesos a convertir");
+let divisa = prompt("¿En qué moneda quieres convertir?")
+
+switch (pesos) {
+    case dolar: 
+        console.log(pesos * 4280)
+        break;
+    case euro: 
+        console.log(pesos * 4728)
+        break;
+    case libra: 
+        console.log(pesos * 5601)
+        break;
+    default:
+        console.log("Esta moneda no existe)
+        break;
 }
-}else if(edad >1980 && edad <=1996){
-    console.log("Generación Y");
-}
-}else if(edad >1996 && edad <=2012){
-    console.log("Generación Z");
-}
-}else(edad >2012 ){
-    console.log("Generación Alpha");
-}
+
+
+
+
+
+
