@@ -1,46 +1,4 @@
 /**
- * la declaración console.log no se ve en nla página pero sí en la consola F12
- */
-
-/** console.log("Hola mundo")
-
-//variables
-
-let numero1 = 30;
-let numero2 = 60;
-
-suma = numero1 + numero2
-resta = numero1 - numero2
-multiplicacion = numero1 * numero2
-division = numero1 / numero2
-
-//para imprimir se utiliza console.log
-
-console.log(numero1)
-console.log(numero2)
-
-//Concatenamos con un +
-
-console.log("El resultado de: " + numero1)
-
-//Para escribir constantes
-
-
-
-//Para escribir booleano
-
-
-
-//concatenar con "literal template"
-//Las comillas invertidas es alt+96
-
-console.log(`El resultado de la suma entre ${numero1} y ${numero2} es ${suma}`)
-console.log(`El resultado de la resta entre ${numero1} y ${numero2} es ${resta}`)
-console.log(`El resultado de la multiplicacion entre ${numero1} y ${numero2} es ${multiplicacion}`)
-console.log(`El resultado de la division entre ${numero1} y ${numero2} es ${division}`)
-
-
-/**
  * Clase 10/09/2024
  * Vamos a trabajar con variables 'let'
  * Para ingresar números enteros se utiliza la palabra reservada 'parseInt'
@@ -144,29 +102,41 @@ if( año <1900) {
 */
 //Operador ternario: se utiliza cuando se evalúa una sola condición
 
-//Ejericicio switch case: Conversor de dinero
+//Ejericicio switch case: Conversor de dinero // parseFloat es para que ingrese solo valores numéricos
+
+/** 
 
 
-let pesos = prompt("Valor en pesos a convertir");
-let divisa = prompt("¿En qué moneda quieres convertir?")
+let pesos = parseFloat(prompt("Valor en pesos a convertir"));
+let divisa = prompt("Escribe la moneda: \nusd \neur \ngbp")
 
-switch (pesos) {
-    case dolar: 
-        console.log(pesos * 4280)
+let usd = 4280;
+let eur = 4728;
+let gbp = 5601;
+
+switch (divisa) {
+    case "usd": 
+        console.log(pesos / usd);
         break;
-    case euro: 
-        console.log(pesos * 4728)
+    case "eur": 
+        console.log(pesos / eur);
         break;
-    case libra: 
-        console.log(pesos * 5601)
+    case "gbp": 
+        console.log(pesos / gbp);
         break;
     default:
-        console.log("Esta moneda no existe)
-        break;
+        console.log ("Ingresa una moneda correcta");
 }
 
+*/
 
+// Clase 12/
 
+/** 
+let divisor = 10
+let dividendo = parseFloat(prompt("Ingresa el divisor"))
 
-
-
+for(let divisor = 10; divi){
+    console.log(${divisor} / ${dividendo} = ${(dividendo/dividendo)})
+}
+*/
