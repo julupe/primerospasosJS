@@ -43,7 +43,7 @@ for (let i = 1; i <= 10; i++){
     }
 }
 
-*/
+
 
 // Ejercicio 5: imprimir la suma de los primeros 100 números impares
 
@@ -54,3 +54,4 @@ for (let s = 1; s <100; s+2){
 }
 console.log(`La suma de los primeros 100 números impares es igual a ${sum}`)
 
+*/
