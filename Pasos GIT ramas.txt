@@ -1,0 +1,12 @@
+GIT
+
+
+git branch = para verificar las ramas que tengo 
+git branch -b 'nombre de la rama creada' = para crear nuevas ramas
+git checkout 'nombre de la rama a la que quiero cambiar' = para cambiarme de ramas
+ ***Para cargar la rama virtual -al GIT- debo realizar los mismos pasos que con la principal
+
+git status
+git add .
+git commit -m "nombre"
+git push origin 'nombre de la rama a subir'

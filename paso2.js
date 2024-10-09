@@ -1,142 +1,115 @@
-/**
- * Clase 10/09/2024
- * Vamos a trabajar con variables 'let'
- * Para ingresar números enteros se utiliza la palabra reservada 'parseInt'
- * Si quiero decimales debo utilizar parseFloat'
- */
-
-//let nu1 = parseInt(prompt("Ingrese el primer valor"));
-//let nu2 = prompt("Ingrese el segundo valor");
-
-//console.log(`El primer valor es:  ${nu1} y el segundo valor es ${nu2}`)
+// Clase 10/09/2024
+// Vamos a trabajar con variables 'let'
+//Para ingresar números enteros se utiliza la palabra reservada 'parseInt' y para decimales utilizar 'parseFloat'
+//Condicionales: 'if', 'else if' y 'else'
+//Bucles: 'for' y 'while'
+//Sentencia de interrupción: 'break', interrumpe; y 'continue' salta a la siguiente iteración
 
 
-/**
- * Crear números aleatorios
- * Para este ejercicio voy a hacerlo entre 1 y 8
- * Para que no me entregue decimales sino enteros utilizo math.floor lo que hace es redondear el número
-*/
+//Ingreso de datos por el usuario
 
-//Forma 1: Límite hasta el 8 por el +1
+ let nu1 = parseInt(prompt("Ingrese el primer valor"));
+ let nu2 = parseInt(prompt("Ingrese el segundo valor"));
 
-//let alea = Math.floor((Math.random() * 8 )) + 1;
-//console.log(alea);
+ let sum = nu1+nu2;
 
-//Forma 2: límite hasta el 99 porque no tiene el + 1
+ console.log(`El primer valor ingresado es ${nu1} y el segundo es ${nu2}`);
+ console.log(`La suma de los valores ingresados, ${nu1} y ${nu2}, es ${sum}`);
 
-//let alea1 = Math.floor((Math.random() * 100 ));
-//console.log(alea1);
+//Números aleatorios
 
+//Forma 1
+let alea = Math.floor((Math.random() * 8) + 1);   //Biblioteca matemática. Para aleatorio el primer valor '8' es el límite y el de fuera '1' es el inicio
+                                                    //Math.floor es para exigir que se impriman solo números enteros
+console.log(alea);
 
+//Forma 2
+let alea1 = Math.floor((Math.random() * 50)); //Imprime entre 0 y 49
+console.log(alea1);
 
-//Estructuras condicionales: if y else if 
+//Estructura del 'if'
 
-/*let edad = 10;
+let edad = 5;
 
-if(edad <= 18){
-    console.log("Es menor de edad");
+if(edad >= 18){
+ console.log("Es mayor de edad");
 }else{
-    console.log("Es mayor de edad");
-};
-*/
+  console.log("Es menor de edad");   
+}
 
 //Ejercicio 2
-/** 
-let calificación;
 
-calificación = parseFloat(prompt("Ingrese claficación"));
+let calificacion = parseFloat(prompt("Ingrese la nota"));
 
-if(calificación < 3.0){
-    console.log("Reprobó");
+if(calificacion < 3){
+    console.log("Debe repetir la materia");
 }else{
-    console.log("Aprobó");
-}
-*/
-
-//Ejercicio 3 : If anidado (Y = &&) (O = ||)
-
-/**let calificacion;
-
-calificacion = parseFloat(prompt("Ingrese claficación"));
-
-if(calificacion < 3.0){
-    console.log("Reprobó");
-}else if(calificacion >3.1 && calificacion <=4.0 ){
-    console.log("Aprobó");
-}
-else{
-    console.log("El mejor estudiante");
-}
-*/
-
-
-/**Ejercicio de práctica 1
-
-let edad = 18;
-
-if (edad >= 50) {
-    console.log("Eres genración perdida");
-} else {
-    console.log("Eres menor de edad");
+   console-log("Aprobó la materia");
 }
 
-*/
+//if anidados
 
-//Ejercicio 2: if anidado
+ 
+let nota = parseFloat(prompt("Ingrese la nota"));
 
-/** 
-
-let año = 1920
-
-let = prompt("Cuál es tu año de nacimiento");
-
-if( año <1900) {
-    console.log("Eres generación perdida");
-} else if (año > 1901 && < 1924) {
-    console.log("Eres generación grandiosa");
-}
-} else {
-    console.log("Eres generación Alpha");
+if(nota < 3){
+    console.log("Debes repetir la materia");
+}else if( nota < 4.5){
+    console-log("Aprobaste pero sin subsidio");
+}else{
+    console.log("Tienes el subsidio.!Sigue así¡");
 }
 
-*/
-//Operador ternario: se utiliza cuando se evalúa una sola condición
+//if anidados con && (y) || (o)
 
-//Ejericicio switch case: Conversor de dinero // parseFloat es para que ingrese solo valores numéricos
+let nota2 = parseFloat(prompt("Ingrese la nota"));
 
-/** 
-
-
-let pesos = parseFloat(prompt("Valor en pesos a convertir"));
-let divisa = prompt("Escribe la moneda: \nusd \neur \ngbp")
-
-let usd = 4280;
-let eur = 4728;
-let gbp = 5601;
-
-switch (divisa) {
-    case "usd": 
-        console.log(pesos / usd);
-        break;
-    case "eur": 
-        console.log(pesos / eur);
-        break;
-    case "gbp": 
-        console.log(pesos / gbp);
-        break;
-    default:
-        console.log ("Ingresa una moneda correcta");
+if(nota2 < 3){
+    console.log("Debes repetir la materia");
+}else if( nota2 > 3 && nota2 < 4.5){
+    console.log("Aprobaste pero sin subsidio");
+}else{
+    console.log("Tienes el subsidio.!Sigue así¡");
 }
 
-*/
+//Ejercicio de las generaciones: preguntar el año de nacimiento e indicar a qué generación pertenece
 
-// Clase 12/
+let edad = parseInt(prompt("¿Cuál es tu edad?"));
+let naci = 2024 - edad
 
-/** 
-let divisor = 10
-let dividendo = parseFloat(prompt("Ingresa el divisor"))
-
-for(let divisor = 10; divi){
-    console.log(${divisor} / ${dividendo} = ${(dividendo/dividendo)})
+if(naci >=1883 && naci <=1900){
+    console.log("Generación perdida");
+}else if(naci >1900 && naci <=1924){
+    console.log("Generación grandiosa");
+}else if(naci >1924 && naci <=1945){
+    console.log("Generación silenciosa");
+}else if(naci >1945 && naci <=1964){
+    console.log("Generación X");
+}else if(naci >1964 && naci <=1980){
+    console.log("Generación Boomers");
+}else if(naci >1980 && naci <=1996){
+    console.log("Generación Y");
+}else if(naci >1996 && naci <=2012){
+    console.log("Generación Z");
+}else if(naci >2012 && naci <=2025){
+    console.log("Generación Alpha");
+}else{
+    console.log("Generción no definida");
 }
-*/
+
+//Ejercicio práctico 3
+
+
+let perm = parseInt(prompt("¿Quién te dio permiso? (digita el número)\n1. Papá \n2. Mamá \n3. Ambos \n4. Ninguno "));
+
+if (perm === 1){
+    console.log("Debes hablar con mamá");
+} else if(perm === 2){
+    console.log("Debes hablar con papá");
+} else if(perm === 3){
+    console.log("Puedes ir");
+} else if(perm === 4){
+    console.log("¿Crees que te mandas sola?");
+}else{
+    console.log("Ingresa una opción válida");
+}
